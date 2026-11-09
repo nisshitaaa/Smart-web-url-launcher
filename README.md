@@ -43,15 +43,17 @@ The project demonstrates the complete SAP RAP development lifecycle, from databa
 
 ## ⚙️ URL Resolution Logic
 
- amazon      :  https://www.amazon.in 
- google      :  https://www.google.com 
- youtube     :  https://www.youtube.com 
- netflix     :  https://www.netflix.com 
- flipkart    :  https://www.flipkart.com 
- linkedin    :  https://www.linkedin.com 
- github      :  https://www.github.com 
- best laptops:  https://www.google.com/search?q=best+laptops 
- Empty input :  Validation error 
+| User Input | Generated URL |
+|---|---|
+| amazon | https://www.amazon.in |
+| google | https://www.google.com |
+| youtube | https://www.youtube.com |
+| netflix | https://www.netflix.com |
+| flipkart | https://www.flipkart.com |
+| linkedin | https://www.linkedin.com |
+| github | https://www.github.com |
+| best laptops | https://www.google.com/search?q=best+laptops |
+| Empty input | Validation error |
 
 Known website names are resolved using predefined mappings. Other single-word inputs are converted into website URLs, while multi-word phrases generate Google search links.
 
