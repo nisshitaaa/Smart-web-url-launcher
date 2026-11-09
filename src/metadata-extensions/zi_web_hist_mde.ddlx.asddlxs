@@ -1,0 +1,32 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName: 'Launch',
+  typeNamePlural: 'Launch History'
+}
+
+@UI.presentationVariant: [{
+  sortOrder: [{ by: 'LaunchedAt', direction: #DESC }],
+  visualizations: [{ type: #AS_LINEITEM }]
+}]
+
+annotate entity ZI_WEB_HIST with
+{
+  @UI.hidden: true
+  HistoryId;
+
+  @UI.hidden: true
+  WebId;
+
+  @EndUserText.label: 'Launched At'
+  @UI.lineItem: [{ position: 10, label: 'Launched At' }]
+  LaunchedAt;
+
+  @EndUserText.label: 'Launched By'
+  @UI.lineItem: [{ position: 20, label: 'Launched By' }]
+  LaunchedBy;
+
+  @EndUserText.label: 'Status'
+  @UI.lineItem: [{ position: 30, label: 'Status' }]
+  LaunchStatus;
+}
