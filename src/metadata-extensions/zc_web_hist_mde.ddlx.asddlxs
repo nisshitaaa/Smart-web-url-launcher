@@ -1,0 +1,41 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName: 'Launch',
+  typeNamePlural: 'Launch History',
+  title: { type: #STANDARD, value: 'WebsiteName' }
+}
+
+@UI.presentationVariant: [{
+  sortOrder: [{ by: 'LaunchedAt', direction: #DESC }],
+  visualizations: [{ type: #AS_LINEITEM }]
+}]
+
+annotate entity ZC_WEB_HIST with
+{
+  @UI.hidden: true
+  HistoryId;
+
+  @UI.hidden: true
+  WebId;
+
+  @EndUserText.label: 'Website'
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10, label: 'Website' }]
+  WebsiteName;
+
+  @EndUserText.label: 'Launched At'
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20, label: 'Launched At' }]
+  LaunchedAt;
+
+  @EndUserText.label: 'Launched By'
+  @UI.selectionField: [{ position: 30 }]
+  @UI.lineItem: [{ position: 30, label: 'Launched By' }]
+  LaunchedBy;
+
+  @EndUserText.label: 'Status'
+  @UI.selectionField: [{ position: 40 }]
+  @UI.lineItem: [{ position: 40, label: 'Status' }]
+  LaunchStatus;
+}
