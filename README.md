@@ -170,39 +170,39 @@ Screenshots demonstrating the application's functionality will be added below.
 
 ### 1. Website List Report
 
-![Website List Report](screenshots/01-list-report.png)
+![Website List Report](screenshots/01-list-report.png.jpeg)
 
 ### 2. Website Object Page
 
-![Website Object Page](screenshots/02-object-page.png)
+![Website Object Page](screenshots/02-object-page.png.jpeg)
 
 ### 3. Launch History Tab
 
-![Launch History Tab](screenshots/03-launch-history-tab.png)
+![Launch History Tab](screenshots/03-launch-history-tab.png.jpeg)
 
 ### 4. Standalone Launch History
 
-![Launch History List](screenshots/04-launch-history-list.png)
+![Launch History List](screenshots/04-launch-history-list.png.jpeg)
 
 ### 5. Duplicate Entry Validation
 
-![Duplicate Error](screenshots/05-duplicate-error.png)
+![Duplicate Error](screenshots/05-duplicate-error.png.jpeg)
 
 ### 6. Mandatory Field Validation
 
-![Empty Name Error](screenshots/06-empty-name-error.png)
+![Empty Name Error](screenshots/06-empty-name-error.png.jpeg)
 
 ### 7. Website Creation with Category
 
-![Create with Category](screenshots/07-create-with-category.png)
+![Create with Category](screenshots/07-create-with-category.png.jpeg)
 
 ### 8. Alias-Based Search
 
-![Alias Search](screenshots/08-alias-search.png)
+![Alias Search](screenshots/08-alias-search.png.jpeg)
 
 ### 9. SAP Eclipse ADT Project Structure
 
-![Eclipse Project Explorer](screenshots/09-project-explorer.png)
+![Eclipse Project Explorer](screenshots/09-project-explorer.png.jpeg)
 
 ## 🎥 Project Demonstration
 
