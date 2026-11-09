@@ -1,0 +1,8 @@
+@EndUserText.label: 'Website Launcher Service Definition'
+define service ZUI_WEB_URL {
+  expose ZC_WEB_URL  as Website;
+  expose ZC_WEB_CAT  as Category;
+  expose ZI_WEB_CAT  as CategoryText;
+  expose ZC_WEB_HIST as LaunchHistory;
+  expose ZI_WEB_HIST as History;
+}
