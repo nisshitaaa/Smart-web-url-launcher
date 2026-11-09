@@ -1,0 +1,130 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName: 'Website',
+  typeNamePlural: 'Websites',
+  title: {
+    type: #STANDARD,
+    value: 'WebsiteName'
+  },
+  description: {
+    type: #STANDARD,
+    value: 'WebsiteUrl'
+  }
+}
+
+annotate entity ZC_WEB_URL with
+{
+  @UI.facet: [
+    {
+      id: 'WebsiteDetails',
+      purpose: #STANDARD,
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Website Details',
+      position: 10
+    },
+    {
+      id: 'LaunchHistory',
+      purpose: #STANDARD,
+      type: #LINEITEM_REFERENCE,
+      label: 'Launch History',
+      position: 20,
+      targetElement: '_History'
+    }
+  ]
+
+  @EndUserText.label: 'Website Name'
+  @UI.lineItem: [
+    { position: 10, label: 'Website Name' },
+    {
+      position: 70,
+      type: #FOR_ACTION,
+      dataAction: 'OpenWebsite',
+      label: 'Open Website'
+    }
+  ]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [
+    { position: 10, label: 'Website Name' }
+  ]
+  WebsiteName;
+
+  @EndUserText.label: 'Website URL'
+  @UI.lineItem: [
+    {
+      position: 20,
+      type: #WITH_URL,
+      url: 'WebsiteUrl',
+      label: 'Website URL'
+    }
+  ]
+  @UI.identification: [
+    { position: 20, label: 'Website URL' }
+  ]
+  WebsiteUrl;
+
+  @EndUserText.label: 'Category'
+  @UI.textArrangement: #TEXT_ONLY
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [
+    { position: 30, label: 'Category' }
+  ]
+  @UI.identification: [
+    { position: 30, label: 'Category' }
+  ]
+  CategoryId;
+
+  @EndUserText.label: 'Search Aliases'
+  @UI.identification: [
+    { position: 40, label: 'Search Aliases' }
+  ]
+  SearchAliases;
+
+  @EndUserText.label: 'Description'
+  @UI.identification: [
+    { position: 50, label: 'Description' }
+  ]
+  Description;
+
+  @EndUserText.label: 'Favorite'
+  @UI.lineItem: [
+    { position: 40, label: 'Favorite' }
+  ]
+  @UI.identification: [
+    { position: 60, label: 'Favorite' }
+  ]
+  IsFavorite;
+
+  @EndUserText.label: 'Active'
+  @UI.lineItem: [
+    { position: 50, label: 'Active' }
+  ]
+  @UI.identification: [
+    { position: 70, label: 'Active' }
+  ]
+  IsActive;
+
+  @EndUserText.label: 'Launch Count'
+  @UI.lineItem: [
+    { position: 60, label: 'Launch Count' }
+  ]
+  LaunchCount;
+
+  @EndUserText.label: 'Last Launched At'
+  @UI.identification: [
+    { position: 80, label: 'Last Launched At' }
+  ]
+  LastLaunchedAt;
+
+  @EndUserText.label: 'Created By'
+  CreatedBy;
+
+  @EndUserText.label: 'Created At'
+  CreatedAt;
+
+  @EndUserText.label: 'Last Changed By'
+  LastChangedBy;
+
+  @EndUserText.label: 'Last Changed At'
+  LastChangedAt;
+}
