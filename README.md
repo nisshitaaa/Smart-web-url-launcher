@@ -206,9 +206,13 @@ Screenshots demonstrating the application's functionality will be added below.
 
 ## 🎥 Project Demonstration
 
-A complete video walkthrough demonstrating website creation, URL generation, validations, website launching, and launch-history tracking will be added here.
+Watch the complete walkthrough of the Smart Web URL Launcher application.
 
-**Demo Video:** Coming soon.
+[![Smart Web URL Launcher Demo](https://img.youtube.com/vi/MBSFjzEaazA/0.jpg)](https://youtu.be/MBSFjzEaazA)
+
+**[▶ Watch the Project Demo on YouTube](https://youtu.be/MBSFjzEaazA)**
+
+The video demonstrates website creation, automatic URL generation, validation, website launching, launch tracking, and history management.
 
 ## 🧪 Testing
 
